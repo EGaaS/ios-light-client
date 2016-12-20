@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DayLight.xcodeproj">
+      location = "self:/Users/anechaev/Developer/iOS/DayLight/EGaaS.xcodeproj">
    </FileRef>
 </Workspace>

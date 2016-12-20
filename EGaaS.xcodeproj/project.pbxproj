@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6973E6821D750D98008A72D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973E6811D750D98008A72D4 /* AppDelegate.swift */; };
-		6973E6841D750D98008A72D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973E6831D750D98008A72D4 /* ViewController.swift */; };
 		6973E6871D750D98008A72D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6973E6851D750D98008A72D4 /* Main.storyboard */; };
 		6973E6891D750D98008A72D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6973E6881D750D98008A72D4 /* Assets.xcassets */; };
 		6973E68C1D750D98008A72D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6973E68A1D750D98008A72D4 /* LaunchScreen.storyboard */; };
+		6973E6941D75132A008A72D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973E6931D75132A008A72D4 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6973E67E1D750D98008A72D4 /* DayLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6973E67E1D750D98008A72D4 /* EGaaS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGaaS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6973E6811D750D98008A72D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6973E6831D750D98008A72D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6973E6861D750D98008A72D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6973E6881D750D98008A72D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6973E68B1D750D98008A72D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6973E68D1D750D98008A72D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6973E6931D75132A008A72D4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 		6973E67F1D750D98008A72D4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6973E67E1D750D98008A72D4 /* DayLight.app */,
+				6973E67E1D750D98008A72D4 /* EGaaS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				6973E6811D750D98008A72D4 /* AppDelegate.swift */,
-				6973E6831D750D98008A72D4 /* ViewController.swift */,
+				6973E6931D75132A008A72D4 /* ViewController.swift */,
 				6973E6851D750D98008A72D4 /* Main.storyboard */,
 				6973E6881D750D98008A72D4 /* Assets.xcassets */,
 				6973E68A1D750D98008A72D4 /* LaunchScreen.storyboard */,
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6973E67D1D750D98008A72D4 /* DayLight */ = {
+		6973E67D1D750D98008A72D4 /* EGaaS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6973E6901D750D98008A72D4 /* Build configuration list for PBXNativeTarget "DayLight" */;
+			buildConfigurationList = 6973E6901D750D98008A72D4 /* Build configuration list for PBXNativeTarget "EGaaS" */;
 			buildPhases = (
 				6973E67A1D750D98008A72D4 /* Sources */,
 				6973E67B1D750D98008A72D4 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = DayLight;
+			name = EGaaS;
 			productName = DayLight;
-			productReference = 6973E67E1D750D98008A72D4 /* DayLight.app */;
+			productReference = 6973E67E1D750D98008A72D4 /* EGaaS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -91,15 +91,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Andrei Nechaev";
 				TargetAttributes = {
 					6973E67D1D750D98008A72D4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6K8SV2N4VK;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
-			buildConfigurationList = 6973E6791D750D98008A72D4 /* Build configuration list for PBXProject "DayLight" */;
+			buildConfigurationList = 6973E6791D750D98008A72D4 /* Build configuration list for PBXProject "EGaaS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6973E67D1D750D98008A72D4 /* DayLight */,
+				6973E67D1D750D98008A72D4 /* EGaaS */,
 			);
 		};
 /* End PBXProject section */
@@ -135,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6973E6841D750D98008A72D4 /* ViewController.swift in Sources */,
+				6973E6941D75132A008A72D4 /* ViewController.swift in Sources */,
 				6973E6821D750D98008A72D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +178,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -222,8 +226,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -242,6 +248,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -251,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DayLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = world.daylight.DayLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -262,17 +272,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DayLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = world.daylight.DayLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6973E6791D750D98008A72D4 /* Build configuration list for PBXProject "DayLight" */ = {
+		6973E6791D750D98008A72D4 /* Build configuration list for PBXProject "EGaaS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6973E68E1D750D98008A72D4 /* Debug */,
@@ -281,13 +294,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6973E6901D750D98008A72D4 /* Build configuration list for PBXNativeTarget "DayLight" */ = {
+		6973E6901D750D98008A72D4 /* Build configuration list for PBXNativeTarget "EGaaS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6973E6911D750D98008A72D4 /* Debug */,
 				6973E6921D750D98008A72D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
