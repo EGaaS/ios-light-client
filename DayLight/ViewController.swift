@@ -18,21 +18,24 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let frame = CGRect(x: 0, y: 20, width: view.frame.width, height: view.frame.height - 20)
+        navigationController?.navigationBar.isHidden = true
+        
+        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - 20)
         webView = WKWebView(frame: frame)
         view.addSubview(webView);
         webView.navigationDelegate = self
-        let url = URL(string: "https://node001.egaas.org")
-        self.request = URLRequest(url: url!)
+        
+        guard let url = poolURL else {
+            let _ = self.navigationController?.popToRootViewController(animated: true)
+            return
+        }
+        
+        self.request = URLRequest(url: url)
         self.webView.load(self.request!)
+    
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
     func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
         print("provisional navigation")

@@ -12,6 +12,7 @@
 		6973E6891D750D98008A72D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6973E6881D750D98008A72D4 /* Assets.xcassets */; };
 		6973E68C1D750D98008A72D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6973E68A1D750D98008A72D4 /* LaunchScreen.storyboard */; };
 		6973E6941D75132A008A72D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973E6931D75132A008A72D4 /* ViewController.swift */; };
+		6991A9801E103860004F0A1B /* NodeChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6991A97F1E103860004F0A1B /* NodeChooserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6973E68B1D750D98008A72D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6973E68D1D750D98008A72D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6973E6931D75132A008A72D4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6991A97F1E103860004F0A1B /* NodeChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeChooserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				6973E6811D750D98008A72D4 /* AppDelegate.swift */,
+				6991A97F1E103860004F0A1B /* NodeChooserViewController.swift */,
 				6973E6931D75132A008A72D4 /* ViewController.swift */,
 				6973E6851D750D98008A72D4 /* Main.storyboard */,
 				6973E6881D750D98008A72D4 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6973E6941D75132A008A72D4 /* ViewController.swift in Sources */,
+				6991A9801E103860004F0A1B /* NodeChooserViewController.swift in Sources */,
 				6973E6821D750D98008A72D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
