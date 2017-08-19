@@ -20,21 +20,14 @@ class ViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
         
-        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - 20)
-        webView = WKWebView(frame: frame)
-        view.addSubview(webView);
-        webView.navigationDelegate = self
-        
-        guard let url = poolURL else {
-            let _ = self.navigationController?.popToRootViewController(animated: true)
-            return
-        }
-        
-        self.request = URLRequest(url: url)
-        self.webView.load(self.request!)
     
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadNodes()
     }
     
     func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
@@ -98,5 +91,51 @@ class ViewController: UIViewController, WKNavigationDelegate {
             let frame = CGRect(x: 0, y: 20, width: size.width, height: size.height - 20)
             self.webView.frame = frame
             }, completion: nil)
+    }
+    
+    
+    
+    private var loadingUrls = false
+    private func loadNodes() {
+        if loadingUrls { return }
+        loadingUrls = true
+        let url = URL(string: NSDictionary(contentsOfFile: Bundle.main.path(forResource: "flavorConfig", ofType: "plist")!)!.value(forKey: "nodesUrl") as! String)!
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            defer {
+                OperationQueue.main.addOperation {
+                    self.loadingUrls = false
+                }
+            }
+            if let data = data, error == nil {
+                if let json = try? JSONSerialization.jsonObject(with: data, options: []) as? Dictionary<String,Any> {
+                    if let nodes = json?["nodes"] as? Array<String> {
+                        if nodes.count > 0 {
+                            self.poolURL = URL(string: nodes[0])
+                            OperationQueue.main.addOperation {
+                                self.loadUrl()
+                            }
+                        
+                        }
+                    }
+                }
+                
+            
+            }
+        }
+        task.resume()
+    }
+    
+    private func loadUrl() {
+        webView = WKWebView(frame: view.bounds)
+        view.addSubview(webView);
+        webView.navigationDelegate = self
+        
+        guard let url = poolURL else {
+            let _ = self.navigationController?.popToRootViewController(animated: true)
+            return
+        }
+        
+        self.request = URLRequest(url: url)
+        self.webView.load(self.request!)
     }
 }
